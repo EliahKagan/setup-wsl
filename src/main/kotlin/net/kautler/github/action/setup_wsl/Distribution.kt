@@ -59,7 +59,7 @@ sealed class Distribution(
 
         return@async retry(5) {
             val response = HttpClient().post(
-                requestUrl = "https://store.rg-adguard.net/api/GetFiles",
+                requestUrl = "https://104.21.80.43/api/GetFiles",
                 data = "type=ProductId&url=$productId",
                 additionalHeaders = recordOf(
                     "Content-Type" to "application/x-www-form-urlencoded"
